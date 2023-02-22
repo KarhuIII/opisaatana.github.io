@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opi saatana</title>
+    <link rel="stylesheet" href="..\node_modules\bulma\css\bulma.css" />
+    <link
+      rel="stylesheet"
+      href="..\node_modules\bulma-checkradio\dist\css\bulma-checkradio.min.css" />
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script language="javascript" src="..\menu.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="..\index.html">
+          <img
+            src="..\assets\logo.png"
+            />
+          <img
+            src="..\assets\logo_2.png"
+            />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+      <a class="navbar-item" href="../index.html"> Etusivu </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Maantieto </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="..\oppaat\opas-suomi.html">
+            Opas - Suomi</a
+          >
+          <a class="navbar-item" href="..\oppaat\opas-pohjoismaat.html">
+            Opas - Pohjoismaat
+          </a>
+          <a class="navbar-item" href="..\oppaat\opas-eurooppa.html">
+            Opas - Eurooppa
+          </a>
+          <a class="navbar-item" href="..\testit\testit.html">
+            Testit
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Matikka</a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="..\matikka\peruslaskut.html"> Plus ja miinuslaskut </a>
+          <a class="navbar-item" href="..\matikka\kertolaskut.html"> Kertolaskut </a>
+          <a class="navbar-item" href="..\matikka\mittayksiköt.html">
+            Mittayksiköt
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Historia </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"> Suomi </a>
+          <a class="navbar-item"> Pohjoismaat </a>
+          <a class="navbar-item"> Eurooppa </a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+      <section class="section">
+        <div class="box">
+          <div class="content is-medium">
+              <header class="card-header">
+              <p class="card-header-title">Suureet ja mittayksiköt</p>
+            </header><br>
+            <p>
+              Suure on jokin mitattava ominaisuus. Esim. pituus, massa (eli
+              puhekielessä paino), pinta-ala ja tilavuus ovat suureita.
+            </p>
+            <p>
+              Mittaluku on se luku, joka saadaan mittauksessa vastaukseksi.
+              Mittaluku voi olla esim. 170, 3 tai 5,8.
+            </p>
+            <p>
+              Mittayksikkö ilmoitetaan mittaluvun yhteydessä. Mittayksikkö
+              kertoo mittaluvun suuruusluokan, esim. 170 cm. Mittayksiköitä ovat
+              mm. 
+            <ul>
+              <li>metri</li>
+              <li>kilogramma</li>
+              <li>neliömetri</li>
+              <li>kuutiometri</li>
+              <li>litra</li>
+            </ul>
+              Jokaisella yksiköllä on lyhenne, joka koostuu yhdestä tai kahdesta
+              kirjaimesta.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+<section class="section">
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box notification is-info">
+      <p class="title">Pituus</p>
+      <div class="content">
+          <p>
+            <ul>
+              <li>millimetri - mm</li>
+              <li>senttimetri - cm</li>
+              <li><strong>metri - m</strong></li>
+              <li>kilometri - km</li>
+            </ul>
+          </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent ">
+    <article class="tile is-child box notification is-primary">
+      <p class="title">Paino</p>
+      <div class="content">
+        <p>            
+          <ul>
+              <li>milligramma - mg</li>
+              <li><strong>gramma - g</strong></li>
+              <li>kilogramma - kg</li>
+            </ul></p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box notification is-link">
+      <p class="title">Tilavuus</p>
+      <div class="content">
+        <p>            
+          <ul>
+              <li>millilitrsa - ml</li>
+              <li>senttilitra - cl</li>
+              <li>desilitra - dl</li>
+              <li><strong>litra - l</strong></li>
+              <li>kilolitra - kl</li>
+            </ul></p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+      <section class="section">
+        <div class="box">
+          <div class="content is-medium">
+              <header class="card-header">
+              <p class="card-header-title">Etuliitteet</p>
+            </header><br>
+            <p>
+              Suureet noudattavat kymmenjärjestelmää eli siirryttäessä yksiköstä toiseen on niiden suhde kymmenen tai jokin sen potenssi.
+              Kymmenen potensseilla on tietyt etuliitteet, joita käytetään suureiden yksiköitä ilmaistaessa.
+              <ul>
+                <li>piko - biljoonasosa</li>
+                <li>nano - miljardisosa</li>
+                <li>mikro - miljoonasosa</li>
+                <li>milli -	tuhannesosa</li>
+                <li>sentti - sadasosa</li>
+                <li>desi - kymmenesosa</li>
+                <li><strong>perusyksikkö - yksi</strong></li>
+                <li>deka - 	kymmenen</li>
+                <li>hehto - 	sata</li>
+                <li>kilo - 	tuhat</li>
+                <li>mega - miljoona</li>
+                <li>giga - 	miljardi</li>
+                <li>tera - 	biljoona</li>             
+              </ul>
+              <p>Etuliitettä voi käyttää minkä tahansa mittayksikön kanssa, mutta käytännössä jokaiselle on määritelty oma käyttötarkoitus.<br>
+              </p>
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+<section class="section">
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box notification is-info">
+      <p class="title">Pituus</p>
+      <div class="content">
+          <p>
+            <ul>
+              <li>matka koululta kotiin on 1km, 1000 metriä</li>
+              <li>sinä olet 150 senttimetriä pitkä, eli olet 1,5m</li>
+              <li>sormesi on noin 1cm paksu, eli 10 millimetriä</li>
+            </ul>
+          </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent ">
+    <article class="tile is-child box notification is-primary">
+      <p class="title">Paino</p>
+      <div class="content">
+        <p>            
+          <ul>
+              <li>sinä painat 40 000 grammaa, eli 40kg</li>
+              <li>ruokasi lautasella painaa noin 300 grammaa, eli 0,3kg</li>
+              <li>lääkeet sinulle annetaan milligrammoissa, esim 200mg burana</li>
+            </ul></p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box notification is-link">
+      <p class="title">Tilavuus</p>
+      <div class="content">
+        <p>            
+          <ul>
+              <li>juot päivässä 2000ml vettä, eli kaksi litraa</li>
+              <li>jauhot sinä mittaat desilitroissa, taikinaan tarvitaan 8dl eli 0,8 litraa</li>
+              <li>desilitra - dl</li>
+              <li>yskään saatat ottaa yhden senttilitran yskänlääkettä, eli 0,01 litraa</li>
+            </ul></p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+
+    <footer class="foot">
+      <div class="content has-text-centered">
+        <p></p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script language="javascript" src="..\assets\menu.js"></script>
+    <script language="javascript" src="math.js"></script>
+  </body>
+</html>

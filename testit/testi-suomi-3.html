@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opi saatana</title>
+    <link rel="stylesheet" href="..\node_modules\bulma\css\bulma.css" />
+    <link
+      rel="stylesheet"
+      href="..\node_modules\bulma-checkradio\dist\css\bulma-checkradio.min.css" />
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script language="javascript" src="..\menu.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="..\index.html">
+          <img
+            src="..\assets\logo.png"
+            />
+          <img
+            src="..\assets\logo_2.png"
+            />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+      <a class="navbar-item" href="../index.html"> Etusivu </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Maantieto </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="..\oppaat\opas-suomi.html">
+            Opas - Suomi</a
+          >
+          <a class="navbar-item" href="..\oppaat\opas-pohjoismaat.html">
+            Opas - Pohjoismaat
+          </a>
+          <a class="navbar-item" href="..\oppaat\opas-eurooppa.html">
+            Opas - Eurooppa
+          </a>
+          <a class="navbar-item" href="..\testit\testit.html">
+            Testit
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Matikka</a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="..\matikka\peruslaskut.html"> Plus ja miinuslaskut </a>
+          <a class="navbar-item" href="..\matikka\kertolaskut.html"> Kertolaskut </a>
+          <a class="navbar-item" href="..\matikka\mittayksiköt.html">
+            Mittayksiköt
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Historia </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"> Suomi </a>
+          <a class="navbar-item"> Pohjoismaat </a>
+          <a class="navbar-item"> Eurooppa </a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <section class="section">
+          <div class="box">
+            <div class="content is-large">
+              <div>
+                <p class="is-size-3" id="question"></p>
+                <input
+                  class="is-checkradio has-background-color is-success"
+                  type="radio"
+                  name="answer"
+                  value="0"
+                  id="option0" />
+                <label class="is-size-5" for="option0" id="option0text"></label>
+                <br />
+                <input
+                  class="is-checkradio has-background-color is-success"
+                  type="radio"
+                  name="answer"
+                  value="1"
+                  id="option1" />
+                <label class="is-size-5" for="option1" id="option1text"></label>
+                <br />
+                <input
+                  class="is-checkradio has-background-color is-success"
+                  type="radio"
+                  name="answer"
+                  value="2"
+                  id="option2" />
+                <label class="is-size-5" for="option2" id="option2text"></label>
+                <br />
+                <input
+                  class="is-checkradio has-background-color is-success"
+                  type="radio"
+                  name="answer"
+                  value="3"
+                  id="option3" />
+                <label class="is-size-5" for="option3" id="option3text"></label>
+                <br /><br />
+                <button class="button is-info" onclick="checkAnswer()">
+                  Vastaa
+                </button>
+                <div hidden id="result"></div>
+                <div hidden class="notification" id="notification"></div>
+                <div id="result-modal" class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <div class="box">
+                      <h2 class="subtitle">Pisteesi:</h2>
+                      <p id="score-message"></p>
+                      <div class="modal-card-foot">
+                        <button class="button is-info" onclick="resetQuiz()">
+                          Uudelleen</button
+                        ><a
+                          href="..\oppaat\opas-suomi.html"
+                          class="button is-success"
+                          >Oppaaseen</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="modal-close is-large"
+                    aria-label="close"
+                    onclick="closeModal()"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="content has-text-centered">
+        <p></p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script
+      language="javascript"
+      src="..\testit\kysymykset\suomi-3.js"></script>
+    <script language="javascript" src="..\assets\quiz.js"></script>
+    <script language="javascript" src="..\assets\modal.js"></script>
+    <script language="javascript" src="..\assets\menu.js"></script>
+  </body>
+</html>
